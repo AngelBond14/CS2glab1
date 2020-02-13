@@ -4,7 +4,7 @@ public class CourseGrade
 {
 	public static void main(String [] args)
 	{
-		Circle c1;
+		Grade g1;
 
 		// test constructors
 		c1 = new Circle();
@@ -31,10 +31,5 @@ public class CourseGrade
 				System.out.println("Hi");
 		else
 				System.out.println("Bye");
-
-		System.out.println("The diameter of c1 is " + c1.calcDiameter());
-		System.out.println("The area of c1 is " + c1.calcArea());
-
-
 	}
 }
