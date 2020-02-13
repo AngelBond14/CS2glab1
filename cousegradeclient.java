@@ -1,6 +1,6 @@
 // Needs to be refomatted for coursegrade
 
-public class CircleClient
+public class CourseGrade
 {
 	public static void main(String [] args)
 	{
