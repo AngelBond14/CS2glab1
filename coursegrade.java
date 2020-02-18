@@ -12,12 +12,12 @@ public class courseGrade 		// Class Declaration
 	// Default Constructor
 	public courseGrade()
 	{
-		_grade = 0;
+		_grade = "";
 		_letter = "";
 	}
 
 	// Overloaded "Set" Constructor
-	public courseGrade(double g)
+	public courseGrade(string g)
 	{
 		setCourseGrade(g)
 	}

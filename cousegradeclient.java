@@ -6,12 +6,9 @@ class courseGradeclient
 {
   public static void main(String[] args)
   {
-    Grade g1;
-
-    //Contsrctor test
-    g1 = new Grade();
-
-    Grade g2 = new Grade(90);
+    System.out.println("Grade for Course 1");
+    Grade CSII = new Grade("Comp II", "A");
+    
 
   }
 }
