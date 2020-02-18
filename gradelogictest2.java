@@ -1,14 +1,17 @@
-if (temp < -5 || temp > 110)
+if (Grade < 0 || Grade > 101)
 			System.out.println("The Entered Temprture is out of the vaild range");
 
-		else if (temp >= 90)
-			System.out.println("Aprox Summer Temp");
+		else if (Grade >= 87)
+			System.out.println("A");
 
-		else if (temp >= 70 && temp < 90)
-			System.out.println("Aprox Spring Temp");
+		else if (Grade >= 80 && Grade < 86)
+			System.out.println("B");
 
-		else if (temp >= 50 && temp < 70)
-			System.out.println("Aprox Autumn Temp");
+		else if (Grade >= 70 && Grade < 79)
+			System.out.println("C");
 
-		else if (temp < 50)
-			System.out.println("Aprox Winter Temp");
+		else if (Grade < 60 && Grade < 69)
+			System.out.println("D");
+
+		else if (Grade < 50)
+			System.out.println("F");
