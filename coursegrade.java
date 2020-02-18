@@ -13,13 +13,17 @@ public class courseGrade 		// Class Declaration
 	public courseGrade()
 	{
 		_grade = 0;
+		_letter = "";
 	}
 
 	// Overloaded "Set" Constructor
 	public courseGrade(double g)
 	{
-		setCourseGrade(g);
-
+		setCourseGrade(g)
+	}
+	public Letter(string l)
+	{
+		setLetter(l)
 	}
 
 	// Accessor Methods - "get" return the value of an Instance variable
@@ -27,6 +31,10 @@ public class courseGrade 		// Class Declaration
 	public  double getCourseGrade(  )
 	{
 		return _grade;
+	}
+	public string getLetter()
+	{
+		return _letter;
 	}
 
 	// Mutator Methods - "set" change the value of an Instance variable
@@ -41,12 +49,19 @@ public class courseGrade 		// Class Declaration
 
 	public String toString( )
         {
-		return "courseGrade: The grade is " + _grade;
+		return "courseGrade: The grade is " + _letter +" in " + _grade;
 	}
 
 	public boolean equals( courseGrade right )
 	{
 			if (this._grade == right._grade)
+					return true;
+			else
+					return false;
+	}
+	public boolean equals( Letter right )
+	{
+			if (this._letter == right._letter)
 					return true;
 			else
 					return false;

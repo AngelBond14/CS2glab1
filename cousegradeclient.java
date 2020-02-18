@@ -2,7 +2,7 @@
 // Group 3: Antonio Codignotto, Shijo Thomas, Kevin Jaimon
 
 
-class coursegradeclient
+class courseGradeclient
 {
   public static void main(String[] args)
   {
@@ -12,6 +12,6 @@ class coursegradeclient
     g1 = new Grade();
 
     Grade g2 = new Grade(90);
-    
+
   }
 }
