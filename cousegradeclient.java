@@ -8,7 +8,10 @@ class coursegradeclient
   {
     Grade g1;
 
+    //Contsrctor test
     g1 = new Grade();
+
+    Grade g2 = new Grade(90);
     
   }
 }
