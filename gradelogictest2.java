@@ -1,5 +1,5 @@
 if (Grade < 0 || Grade > 101)
-			System.out.println("The Entered Temprture is out of the vaild range");
+			System.out.println("The Entered Grade is out of the vaild range");
 
 		else if (Grade >= 87)
 			System.out.println("A");
