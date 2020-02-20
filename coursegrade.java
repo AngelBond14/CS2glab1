@@ -4,67 +4,43 @@
 public class courseGrade 		// Class Declaration
 {
 	// Instance Variables (Data)
-	private double _grade;
+	private String grade; //grade for the course
+	private String course; //Course name
 
-	// Methods (Actions)
-	// Constructors  Initialize all instance variables
-
-	// Default Constructor
+//Constructors
 	public courseGrade()
 	{
-		_grade = "";
-		_letter = "";
+		grade = "unkonwn"
+		course = "unknown"
 	}
 
-	// Overloaded "Set" Constructor
-	public courseGrade(string g)
-	{
-		setCourseGrade(g)
-	}
-	public Letter(string l)
-	{
-		setLetter(l)
-	}
 
 	// Accessor Methods - "get" return the value of an Instance variable
-
-	public  double getCourseGrade(  )
+	public String getGrade()
 	{
-		return _grade;
+		return course;
 	}
-	public string getLetter()
+	public String getCourse()
 	{
-		return _letter;
+		return grade;
+	}
+//Mutator
+	public courseGrade setGrade(String grade)
+	{
+		this.grade = grade;
+		return this;
+	}
+	public courseGrade setCourse(String course)
+	{
+		this.course = course;
+		return this;
 	}
 
-	// Mutator Methods - "set" change the value of an Instance variable
-
-	public void setCourseGrade( double g )
-	{
-		if (g >= 0)
-			_grade = g;
-		else
-			_grade = 0;
-	}
+//toString
 
 	public String toString( )
         {
-		return "courseGrade: The grade is " + _letter +" in " + _grade;
-	}
-
-	public boolean equals( courseGrade right )
-	{
-			if (this._grade == right._grade)
-					return true;
-			else
-					return false;
-	}
-	public boolean equals( Letter right )
-	{
-			if (this._letter == right._letter)
-					return true;
-			else
-					return false;
+		return "Course Name: " + course + ", Grade : " + grade;
 	}
 
 }
